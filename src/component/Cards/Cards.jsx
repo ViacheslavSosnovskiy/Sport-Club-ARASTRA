@@ -1,3 +1,6 @@
+// import s from './Cards.module.css'
+import { BsCashCoin, BsHourglassSplit, BsGeoAltFill, BsAwardFill, BsWatch } from "react-icons/bs";
+
 export default function Cards () {
     return (
         <div class="container">
@@ -6,9 +9,7 @@ export default function Cards () {
           <ul class="cards__list">
             <li class="cards__item">
               <span class="cards__icon">
-                <svg class="cards__logo" width="40" height="40">
-                  <use href="./img/sprite.svg#time"></use>
-                </svg>
+                <BsHourglassSplit class="cards__logo" width="40" height="40" />
               </span>
               <div class="cards__wrapper">
                 <p class="cards__text">Многолетний опыт</p>
@@ -17,9 +18,7 @@ export default function Cards () {
 
             <li class="cards__item">
               <span class="cards__icon">
-                <svg class="cards__logo" width="40" height="40">
-                  <use href="./img/sprite.svg#clock"></use>
-                </svg>
+                <BsWatch class="cards__logo" width="40" height="40" />
               </span>
               <div class="cards__wrapper">
                 <p class="cards__text">Запись ведётся в любое удобное для вас время</p>
@@ -28,9 +27,7 @@ export default function Cards () {
 
             <li class="cards__item">
               <span class="cards__icon">
-                <svg class="cards__logo" width="40" height="40">
-                  <use href="./img/sprite.svg#location"></use>
-                </svg>
+                <BsGeoAltFill class="cards__logo" width="40" height="40" />
               </span>
               <div class="cards__wrapper">
                 <p class="cards__text">Удобное расположение в городе</p>
@@ -39,9 +36,7 @@ export default function Cards () {
 
             <li class="cards__item">
               <span class="cards__icon">
-                <svg class="cards__logo" width="40" height="40">
-                  <use href="./img/sprite.svg#price"></use>
-                </svg>
+                <BsCashCoin class="cards__logo" width="40" height="40" />
               </span>
               <div class="cards__wrapper">
                 <p class="cards__text">Низкие цены</p>
@@ -50,9 +45,7 @@ export default function Cards () {
 
             <li class="cards__item">
               <span class="cards__icon">
-                <svg class="cards__logo" width="40" height="40">
-                  <use href="./img/sprite.svg#experience"></use>
-                </svg>
+                <BsAwardFill class="cards__logo" width="40" height="40" />
               </span>
               <div class="cards__wrapper">
                 <p class="cards__text">Качество</p>
