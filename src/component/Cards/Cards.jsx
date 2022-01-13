@@ -9,7 +9,7 @@ export default function Cards () {
           <ul class="cards__list">
             <li class="cards__item">
               <span class="cards__icon">
-                <BsHourglassSplit class="cards__logo" width="40" height="40" />
+                <BsHourglassSplit class="cards__logo" width="40" height="40" fill="blue"/>
               </span>
               <div class="cards__wrapper">
                 <p class="cards__text">Многолетний опыт</p>
@@ -18,7 +18,7 @@ export default function Cards () {
 
             <li class="cards__item">
               <span class="cards__icon">
-                <BsWatch class="cards__logo" width="40" height="40" />
+                <BsWatch class="cards__logo" width="40" height="40" fill="blue"/>
               </span>
               <div class="cards__wrapper">
                 <p class="cards__text">Запись ведётся в любое удобное для вас время</p>
@@ -27,7 +27,7 @@ export default function Cards () {
 
             <li class="cards__item">
               <span class="cards__icon">
-                <BsGeoAltFill class="cards__logo" width="40" height="40" />
+                <BsGeoAltFill class="cards__logo" width="80" height="80" fill="blue"/>
               </span>
               <div class="cards__wrapper">
                 <p class="cards__text">Удобное расположение в городе</p>
@@ -36,7 +36,7 @@ export default function Cards () {
 
             <li class="cards__item">
               <span class="cards__icon">
-                <BsCashCoin class="cards__logo" width="40" height="40" />
+                <BsCashCoin class="cards__logo" width="40" height="40" fill="blue"/>
               </span>
               <div class="cards__wrapper">
                 <p class="cards__text">Низкие цены</p>
@@ -45,7 +45,7 @@ export default function Cards () {
 
             <li class="cards__item">
               <span class="cards__icon">
-                <BsAwardFill class="cards__logo" width="40" height="40" />
+                <BsAwardFill class="cards__logo" width="40" height="40" fill="blue"/>
               </span>
               <div class="cards__wrapper">
                 <p class="cards__text">Качество</p>

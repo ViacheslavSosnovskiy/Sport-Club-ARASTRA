@@ -1,5 +1,8 @@
 import {NavLink} from 'react-router-dom';
 
+import {Button,Box} from '@mui/material/';
+
+
 export default function Navigation() {
 
     const styles = {
@@ -8,24 +11,33 @@ export default function Navigation() {
           textDecoration: 'none',
           padding: 12,
           fontWeight: 700,
-          color: '#303C6C',
-        },
-        activeLink: {
-          color: '#F4976C',
+          color: 'orange',
         },
       };    
 
     return (
         <nav>
-            <NavLink to="/" exact style={styles.link} activeStyle={styles.activeLink}>Главная</NavLink>
+        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+            <NavLink to="/" exact style={styles.link}>Главная</NavLink>
+          </Button>
 
-            <NavLink to="/training" exact style={styles.link} activeStyle={styles.activeLink}>Тренировки</NavLink>
-
-            <NavLink to="/photo" exact style={styles.link} activeStyle={styles.activeLink}>Фото</NavLink>
-
-            <NavLink to="/about" exact style={styles.link} activeStyle={styles.activeLink}>О нас</NavLink>
-
-            <NavLink to="/contacts" exact style={styles.link} activeStyle={styles.activeLink}>Контакты</NavLink>
+          <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+            <NavLink to="/training" exact style={styles.link}>Тренировки</NavLink>
+          </Button>
+          
+          <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+            <NavLink to="/photo" exact style={styles.link}>Фото</NavLink>
+          </Button>
+            
+          <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+            <NavLink to="/about" exact style={styles.link}>О нас</NavLink>
+          </Button>
+          
+          <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+            <NavLink to="/contacts" exact style={styles.link}>Контакты</NavLink>
+          </Button>
+        </Box>
         </nav>
     )
 }
